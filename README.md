@@ -11,19 +11,19 @@ Das System basiert auf einer klassischen Client-Server-Architektur, erweitert um
 
 ```mermaid
 graph TD
-    User[Benutzer (Browser)] <-->|HTTP / REST| Client[Frontend (React.js)]
+    User["Benutzer (Browser)"] <-->|HTTP / REST| Client["Frontend (React.js)"]
     
     subgraph "Backend Server (FastAPI)"
         Client <-->|API Requests| API[API Router]
-        API --> Middleware[Security Middleware (CSP, CORS)]
-        API --> RateLimiter[Rate Limiter (SlowAPI)]
-        API --> Logic[Business Logic & Input Sanitization]
-        Logic <--> Auth[Auth Service (JWT)]
-        Logic <--> Encryption[Encryption Service (Fernet)]
+        API --> Middleware["Security Middleware (CSP, CORS)"]
+        API --> RateLimiter["Rate Limiter (SlowAPI)"]
+        API --> Logic["Business Logic & Input Sanitization"]
+        Logic <--> Auth["Auth Service (JWT)"]
+        Logic <--> Encryption["Encryption Service (Fernet)"]
     end
     
-    Encryption <-->|Verschlüsselte Daten| DB[(SQLite Datenbank)]
-    Logic <-->|Natural Language Processing| LLM[LLM Service (OpenAI / LM Studio)]
+    Encryption <-->|"Verschlüsselte Daten"| DB[("SQLite Datenbank")]
+    Logic <-->|"Natural Language Processing"| LLM["LLM Service (OpenAI / LM Studio)"]
 ```
 
 ## ✨ Features
