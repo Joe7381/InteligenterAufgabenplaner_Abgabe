@@ -1,7 +1,7 @@
 <<<<<<< HEAD
 # InteligenterAufgabenplanner
 =======
-# Intelligenter Aufgabenplaner (Bachelorprojekt)
+# Intelligenter Aufgabenplaner
 
 Dieses Projekt ist ein "Intelligenter Aufgabenplaner", der natürliche Spracheingabe ("Prompting") nutzt, um Aufgaben automatisch mit Metadaten (Datum, Priorität, Kategorie) zu versehen. Es demonstriert eine moderne Web-Architektur mit einem starken Fokus auf **Sicherheit und Datenintegrität** (Encryption at Rest, Rate Limiting, CSP).
 
