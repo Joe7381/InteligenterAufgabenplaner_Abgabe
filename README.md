@@ -104,6 +104,6 @@ pytest test_security.py
 Erwartetes Ergebnis: `4 passed` (Validierung von Encryption, Rate Limiting, CSP, Sanitization).
 
 ## 📄 Lizenz & Hinweise
-Entwickelt im Rahmen eines Bachelor-Projekts (7 ECTS).
+Entwickelt im Rahmen eines Hochschul-Projekts
 Verwendet SQLite als persistente Datenspeicherschicht (Cloud-Migration auf PostgreSQL per Config möglich).
 >>>>>>> f81790d (Final Commit: Version-Abgabe mit Security Hardening)
