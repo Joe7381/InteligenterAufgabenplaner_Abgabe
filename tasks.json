@@ -1,0 +1,23 @@
+﻿
+
+StatusCode        : 200
+StatusDescription : OK
+Content           : [{"id":1747319462223,"title":"arzt","description":"","deadline":"2025-04-30T00:00:00","priority":1,"done":true,"project_id":null,"recurrence":"","color":"#3788d8","n
+                    otes":null,"custom_fields":null,"at...
+RawContent        : HTTP/1.1 200 OK
+                    Content-Length: 437
+                    Content-Type: application/json
+                    Date: Thu, 15 May 2025 14:33:28 GMT
+                    Server: uvicorn
+                    
+                    [{"id":1747319462223,"title":"arzt","description":"","deadline":"2025-04-3...
+Forms             : {}
+Headers           : {[Content-Length, 437], [Content-Type, application/json], [Date, Thu, 15 May 2025 14:33:28 GMT], [Server, uvicorn]}
+Images            : {}
+InputFields       : {}
+Links             : {}
+ParsedHtml        : mshtml.HTMLDocumentClass
+RawContentLength  : 437
+
+
+

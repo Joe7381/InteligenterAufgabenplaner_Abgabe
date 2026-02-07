@@ -1,0 +1,10 @@
+| Funktion                    | Methode           | Beispiel                     |
+| --------------------------- | ----------------- | ---------------------------- |
+| Neue Aufgabe erstellen      | **POST mit JSON** | `/task` mit Body             |
+| Bestehende Aufgabe anzeigen | Path              | `/task/42`                   |
+| Aufgaben filtern/suchen     | Query             | `/tasks?done=true&prio=high` |
+| Aufgabe ändern              | PUT mit JSON      | `/task/42` + Body            |
+| Aufgabe löschen             | DELETE            | `/task/42`                   |
+
+
+okay ich fasse zusammen: wenn ich am frontend arbeite kann ich einfach die seite http://localhost:3000 neu laden um die änderungen zu sehen, wenn ich in der main also im backend etwas ändere muss ich fastapi neu starten. und wenn ich am frontend etwas ändere was aber andere benutzer sehen sollen über ngroc muss ich npm run build machen und dann fastapi neu starten und dann ngroc neu starten

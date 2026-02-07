@@ -1,0 +1,16 @@
+fastapi
+uvicorn
+sqlalchemy
+pydantic
+python-dotenv
+slowapi
+python-jose[cryptography]
+passlib[bcrypt]
+bleach
+openai
+requests
+httpx
+pytest
+typing-extensions
+python-multipart
+bcrypt

@@ -1,0 +1,14 @@
+{
+  "id": 123,
+  "title": "Test",
+  "description": "Testdesc",
+  "deadline": "2025-07-12T15:00:00",
+  "priority": 1,
+  "done": false,
+  "project_id": null,
+  "recurrence": "",
+  "color": "#3788d8",
+  "notes": null,
+  "custom_fields": null,
+  "attachments": null
+}
