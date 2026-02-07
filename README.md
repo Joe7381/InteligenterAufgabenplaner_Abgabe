@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# InteligenterAufgabenplanner
-=======
 # Intelligenter Aufgabenplaner
 
 Dieses Projekt ist ein "Intelligenter Aufgabenplaner", der natürliche Spracheingabe ("Prompting") nutzt, um Aufgaben automatisch mit Metadaten (Datum, Priorität, Kategorie) zu versehen. Es demonstriert eine moderne Web-Architektur mit einem starken Fokus auf **Sicherheit und Datenintegrität** (Encryption at Rest, Rate Limiting, CSP).
@@ -74,6 +71,28 @@ cd frontend
 npm install
 ```
 
+### 4. LLM / KI Einrichtung (Lokales LLM)
+Das Projekt nutzt standardmäßig ein lokales LLM, um Datenschutz zu gewährleisten und Kosten zu sparen.
+Empfohlen wird **LM Studio**, da es einen OpenAI-kompatiblen lokalen Server bereitstellt.
+
+1.  **LM Studio downloaden & installieren** (https://lmstudio.ai/).
+2.  Ein Modell deiner Wahl laden (z.B. `Mistral 7B` oder `Llama 3`).
+3.  Im Tab "Local Server" den Server starten.
+    *   Standard-Port ist `1234`.
+    *   Das Backend erwartet die URL unter `http://localhost:1234/v1`.
+
+Falls du einen anderen Port oder eine entfernte API (z.B. OpenAI direkt) nutzen möchtest, passe die `.env` Datei an:
+
+```dotenv
+# Beispiel für lokales LM Studio (Standard)
+LM_STUDIO_URL=http://localhost:1234/v1
+
+# Beispiel für Remote Server im Netzwerk
+# LM_STUDIO_URL=http://192.168.1.50:1234/v1
+```
+
+*Hinweis: Das System ist so konzipiert, dass es mit jeder API funktioniert, die dem OpenAI-Chat-Completion Standard folgt.*
+
 ## ▶️ Starten der Anwendung
 
 Die Anwendung benötigt zwei parallele Terminals.
@@ -106,4 +125,3 @@ Erwartetes Ergebnis: `4 passed` (Validierung von Encryption, Rate Limiting, CSP,
 ## 📄 Lizenz & Hinweise
 Entwickelt im Rahmen eines Hochschul-Projekts
 Verwendet SQLite als persistente Datenspeicherschicht (Cloud-Migration auf PostgreSQL per Config möglich).
->>>>>>> f81790d (Final Commit: Version-Abgabe mit Security Hardening)
